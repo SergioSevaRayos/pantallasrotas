@@ -1,0 +1,109 @@
+/* Reset de estilos y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos para el header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 36px;
+    text-shadow: 4px 7px 3px rgba(0, 0, 0, 0.3);
+}
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header .nav li {
+    margin-right: 20px;
+}
+
+.header .nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* ... (estilos anteriores) ... */
+
+/* Estilos para los artículos de noticias */
+.main {
+    padding: 40px 0;
+}
+
+.noticia {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex; /* Cambio importante: utilizamos flexbox */
+    flex-direction: column; /* Cambio importante: colocamos elementos en columna */
+}
+
+.noticia img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.noticia p{
+    text-align: justify; /* Añadido para justificar el texto */
+}
+.titulo-noticia {
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.descripcion-noticia {
+    color: #666;
+    flex-grow: 1; /* Esto hace que el texto ocupe todo el espacio vertical disponible */
+    padding: 10px; /* Espaciado interno para el texto */
+    border: 1px solid #ccc; /* Agregamos un borde alrededor del texto */
+    border-radius: 5px; /* Redondeamos las esquinas del cuadro de texto */
+}
+
+.leer-mas {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para enlaces en hover */
+a:hover {
+    text-decoration: underline;
+}
