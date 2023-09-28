@@ -17,11 +17,23 @@ body {
 }
 
 /* Estilos para el header */
+/* Añade esta regla para ocultar la barra de navegación por defecto */
+/* CSS para ocultar la barra de navegación */
+/* CSS para el header */
 .header {
-    background-color: #333;
-    color: #fff;
+    /*background-color: #333;*/
+    background-image: url(media/img/header.png);
+    color: #000000;
     padding: 20px 0;
-}
+    box-shadow: 4px 1px 3px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+  }
+  
+  
+  
 
 .header .container {
     display: flex;
@@ -46,14 +58,16 @@ body {
 
 .header .nav a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-weight: bold;
+    text-shadow: 4px 7px 3px rgba(0, 0, 0, 0.3);
 }
 
 /* ... (estilos anteriores) ... */
 
 /* Estilos para los artículos de noticias */
 .main {
+    margin-top: 70px;
     padding: 40px 0;
 }
 
