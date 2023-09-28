@@ -76,6 +76,7 @@ body {
     margin-bottom: 30px;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
     text-align: center;
     display: flex; /* Cambio importante: utilizamos flexbox */
     flex-direction: column; /* Cambio importante: colocamos elementos en columna */
@@ -101,7 +102,7 @@ body {
     padding: 10px; /* Espaciado interno para el texto */
     border: 1px solid #ccc; /* Agregamos un borde alrededor del texto */
     border-radius: 5px; /* Redondeamos las esquinas del cuadro de texto */
-}
+}   
 
 .leer-mas {
     color: #333;
