@@ -30,10 +30,10 @@ body {
     top: 0;
     width: 100%;
     transition: top 0.3s;
-  }
-  
-  
-  
+}
+
+
+
 
 .header .container {
     display: flex;
@@ -78,8 +78,10 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     text-align: center;
-    display: flex; /* Cambio importante: utilizamos flexbox */
-    flex-direction: column; /* Cambio importante: colocamos elementos en columna */
+    display: flex;
+    /* Cambio importante: utilizamos flexbox */
+    flex-direction: column;
+    /* Cambio importante: colocamos elementos en columna */
 }
 
 .noticia img {
@@ -88,9 +90,12 @@ body {
     display: block;
     margin: 0 auto;
 }
-.noticia p{
-    text-align: justify; /* Añadido para justificar el texto */
+
+.noticia p {
+    text-align: justify;
+    /* Añadido para justificar el texto */
 }
+
 .titulo-noticia {
     font-size: 34px;
     margin: 10px 0;
@@ -98,11 +103,15 @@ body {
 
 .descripcion-noticia {
     color: #666;
-    flex-grow: 1; /* Esto hace que el texto ocupe todo el espacio vertical disponible */
-    padding: 10px; /* Espaciado interno para el texto */
-    border: 1px solid #ccc; /* Agregamos un borde alrededor del texto */
-    border-radius: 5px; /* Redondeamos las esquinas del cuadro de texto */
-}   
+    flex-grow: 1;
+    /* Esto hace que el texto ocupe todo el espacio vertical disponible */
+    padding: 10px;
+    /* Espaciado interno para el texto */
+    border: 1px solid #ccc;
+    /* Agregamos un borde alrededor del texto */
+    border-radius: 5px;
+    /* Redondeamos las esquinas del cuadro de texto */
+}
 
 .leer-mas {
     color: #333;
@@ -121,4 +130,71 @@ body {
 /* Estilos para enlaces en hover */
 a:hover {
     text-decoration: underline;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+textarea {
+    resize: vertical;
+    /* Permite redimensionar verticalmente el área de texto */
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Mensaje de éxito */
+.mensaje-exito {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 3px;
+    max-width: 500px;
+}
+
+/* Mensaje de error */
+.mensaje-error {
+    background-color: #F44336;
+    color: #fff;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 3px;
+    max-width: 500px;
 }

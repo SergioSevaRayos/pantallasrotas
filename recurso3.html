@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.3/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.3/dist/sweetalert2.all.min.js"></script>
+    <title>Pantallas Rotas - Noticias</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">PantallasRotas.org</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <article class="noticia">
+                <h2 class="titulo-noticia">Cuestionario en línea para ayuda a evaluar la adicción a los dispositivos
+                    móviles: ¿Eres prisionero de tu smartphone?</h2>
+                <br>
+                <hr>
+                <br>
+                <img src="media/img/imagencuestionario.jpg" alt="Niño con teléfono">
+                <br>
+                <hr>
+                <br>
+                <p class="descripcion-noticia">Descubre si tu relación con el smartphone es saludable o problemática con
+                    nuestro cuestionario diseñado para evaluar la adicción digital</p>
+                <br>
+                <p>
+                <h1>Cuestionario de Adicción a Dispositivos Móviles</h1>
+                <form id="quiz-form">
+                    <ol style="margin: 40px; text-align: justify;">
+                        <li><strong>¿Sientes que necesitas revisar tu teléfono móvil constantemente durante el
+                                día?</strong><br>
+                            <input type="radio" name="q1" value="1"> Sí
+                            <input type="radio" name="q1" value="0"> No
+                        </li>
+                        <br>
+                        <li><strong>¿Tienes dificultades para reducir el tiempo que pasas en tu teléfono móvil, incluso
+                                cuando te lo propones?</strong><br>
+                            <input type="radio" name="q2" value="1"> Sí
+                            <input type="radio" name="q2" value="0"> No
+                        </li>
+                        <br>
+                        <li><strong>¿Descuidas tus responsabilidades o tareas diarias debido al uso excesivo de tu
+                                teléfono móvil?</strong><br>
+                            <input type="radio" name="q3" value="1"> Sí
+                            <input type="radio" name="q3" value="0"> No
+                        </li>
+                        <br>
+                        <li><strong>¿Has intentado sin éxito reducir el tiempo que pasas en tu teléfono
+                                móvil?</strong><br>
+                            <input type="radio" name="q4" value="1"> Sí
+                            <input type="radio" name="q4" value="0"> No
+                        </li>
+                        <br>
+                        <li><strong>¿Sientes ansiedad o inquietud cuando no tienes acceso a tu teléfono
+                                móvil?</strong><br>
+                            <input type="radio" name="q5" value="1"> Sí
+                            <input type="radio" name="q5" value="0"> No
+                        </li>
+                        <br>
+                        <li><strong>¿Prefieres pasar tiempo en tu teléfono móvil en lugar de interactuar cara a cara con
+                                amigos y familiares?</strong><br>
+                            <input type="radio" name="q6" value="1"> Sí
+                            <input type="radio" name="q6" value="0"> No
+                        </li>
+                        <br>
+                        <li><strong>¿Has experimentado problemas en tu vida laboral o académica debido al uso excesivo
+                                de tu teléfono móvil?</strong><br>
+                            <input type="radio" name="q7" value="1"> Sí
+                            <input type="radio" name="q7" value="0"> No
+                        </li>
+                        <br>
+                        <li><strong>¿Has intentado ocultar o minimizar la cantidad de tiempo que pasas en tu teléfono
+                                móvil a otras personas?</strong><br>
+                            <input type="radio" name="q8" value="1"> Sí
+                            <input type="radio" name="q8" value="0"> No
+                        </li>
+                        <br>
+                        <li><strong>¿Te sientes culpable o avergonzado por la cantidad de tiempo que pasas en tu
+                                teléfono móvil?</strong><br>
+                            <input type="radio" name="q9" value="1"> Sí
+                            <input type="radio" name="q9" value="0"> No
+                        </li>
+                        <br>
+                        <li><strong>¿Has notado un deterioro en tu salud mental o física como resultado del uso excesivo
+                                de tu teléfono móvil?</strong><br>
+                            <input type="radio" name="q10" value="1"> Sí
+                            <input type="radio" name="q10" value="0"> No
+                        </li>
+                    </ol>
+                    <input type="submit" value="Calcular Puntuación">
+                </form>
+                <div id="result"></div>
+                </p>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 PantallasRotas.org</p>
+        </div>
+    </footer>
+    <script src="logica.js"></script>
+</body>
+
+</html>
