@@ -198,3 +198,48 @@ input[type="submit"]:hover {
     border-radius: 3px;
     max-width: 500px;
 }
+
+/* Estilos generales para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Tamaño de fuente más grande para dispositivos móviles */
+    }
+
+    .container {
+        padding: 0 10px; /* Reducción del espacio de relleno en dispositivos móviles */
+        flex-direction: column;
+    }
+
+    /* Estilos para el header en dispositivos móviles */
+    .header {
+        padding: 10px 0; /* Reducción del espacio de relleno en el encabezado */
+        
+    }
+
+    .header .logo {
+        font-size: 24px; /* Tamaño de fuente más pequeño para el logo en dispositivos móviles */
+    }
+
+    .header .nav ul {
+        flex-direction: row; /* Cambiar la dirección a una fila horizontal */
+        align-items: center; /* Centrar verticalmente los elementos del menú */
+    }
+
+    .header .nav li {
+        margin: 0 10px; /* Agregar margen horizontal entre los elementos del menú */
+    }
+
+    /* Estilos para los artículos de noticias en dispositivos móviles */
+    .noticia {
+        padding: 10px; /* Reducción del espacio de relleno en las noticias */
+    }
+
+    .noticia img {
+        max-width: 100%; /* Ajustar el tamaño de las imágenes al ancho del contenedor */
+    }
+
+    .titulo-noticia {
+        font-size: 28px; /* Tamaño de fuente más pequeño para los títulos de noticias */
+    }
+}
+
