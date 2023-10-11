@@ -16,10 +16,7 @@ body {
     padding: 0 20px;
 }
 
-/* Estilos para el header */
-/* Añade esta regla para ocultar la barra de navegación por defecto */
-/* CSS para ocultar la barra de navegación */
-/* CSS para el header */
+
 .header {
     /*background-color: #333;*/
     background-image: url(media/img/header.png);
@@ -30,6 +27,7 @@ body {
     top: 0;
     width: 100%;
     transition: top 0.3s;
+    z-index: 1;
 }
 
 
@@ -63,9 +61,7 @@ body {
     text-shadow: 4px 7px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* ... (estilos anteriores) ... */
 
-/* Estilos para los artículos de noticias */
 .main {
     margin-top: 70px;
     padding: 40px 0;
@@ -79,9 +75,8 @@ body {
     border-radius: 3px;
     text-align: center;
     display: flex;
-    /* Cambio importante: utilizamos flexbox */
     flex-direction: column;
-    /* Cambio importante: colocamos elementos en columna */
+
 }
 
 .noticia img {
@@ -93,7 +88,6 @@ body {
 
 .noticia p {
     text-align: justify;
-    /* Añadido para justificar el texto */
 }
 
 .titulo-noticia {
@@ -104,13 +98,9 @@ body {
 .descripcion-noticia {
     color: #666;
     flex-grow: 1;
-    /* Esto hace que el texto ocupe todo el espacio vertical disponible */
     padding: 10px;
-    /* Espaciado interno para el texto */
     border: 1px solid #ccc;
-    /* Agregamos un borde alrededor del texto */
     border-radius: 5px;
-    /* Redondeamos las esquinas del cuadro de texto */
 }
 
 .leer-mas {
@@ -199,6 +189,15 @@ input[type="submit"]:hover {
     max-width: 500px;
 }
 
+.carousel div{
+    text-align: center;
+}
+
+.carousel iframe{
+    border-radius: 7px;
+}
+
+
 /* Estilos generales para dispositivos móviles */
 @media (max-width: 768px) {
     body {
@@ -241,5 +240,6 @@ input[type="submit"]:hover {
     .titulo-noticia {
         font-size: 28px; /* Tamaño de fuente más pequeño para los títulos de noticias */
     }
+
 }
 
